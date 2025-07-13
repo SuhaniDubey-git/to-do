@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DoBee</title>
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 100 100"><text y=".90em" font-size="90">🐝</text></svg>'>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="dobee-heading">🐝 DoBee</h1>
+
+      <button id="theme-toggle">Theme</button>
+    </header>
+
+    <section class="task-input">
+      <input type="text" id="task-title" placeholder="What's on your mind?" />
+      <input type="date" id="task-date" />
+      <button id="add-task">Add Task</button>
+      <div id="warning-msg" style="color: red; font-weight: bold; margin-top: 0.5rem;"></div>
+
+    </section>
+<section id="focus-timer" style="margin-bottom: 2rem;">
+  <h2>Focus Timer</h2>
+  <input type="number" id="custom-time" placeholder="Enter minutes" min="1" style="padding: 0.5rem; border-radius: 8px; width: 160px;" />
+  <div id="timer-display" style="font-size: 2rem; font-weight: bold; margin: 0.5rem 0; color: #99c2c8;">00:00</div>
+  <div class="timer-buttons">
+    <button id="start-timer">Start</button>
+    <button id="pause-timer">Pause</button>
+    <button id="reset-timer">Reset</button>
+  </div>
+</section>
+
+    <section class="planned-projects">
+      <h2>Planned Projects</h2>
+      <div class="task-counter" id="task-counter">0 tasks total, 0 completed</div>
+      <div id="task-list-planned"></div>
+    </section>
+
+    <section class="planned-projects">
+      <h2>Pending Work 🕒</h2>
+      <div id="task-list-pending"></div>
+      
+
+    </section>
+
+    <section class="clock-calendar">
+      <div id="digital-clock">00:00:00</div>
+      <div id="calendar"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
